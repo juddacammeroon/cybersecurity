@@ -1,0 +1,75 @@
+0000.005 () Opened log file at time: Thu, 13 Sep 2018 15:28:07 +0000 on http://cybersecurity.webee.com.mt
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.15.0 WP: 4.9.8 PHP: 5.6.37 (cgi-fcgi, Linux am1.siteground.biz 3.12.18-clouder0 #28 SMP Thu Mar 8 11:53:03 EET 2018 x86_64) MySQL: 5.6.40 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 768M (used: 36.2M | 36.5M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.016 () Free space on disk containing Updraft's temporary directory: 1112620.9 MB
+0000.017 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.030 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.031 () Entity: db
+0000.031 () restore_backup(backup_file=backup_2018-09-13-1518_Cyber_Security_59c4322968c6-db.gz, type=db, info=a:0:{}, last_one=)
+0000.031 () Unpacking backup... (backup_2018-09-13-1518_Cyber_Security_59c4322968c6-db.gz, 0.1 Mb)
+0000.032 () Database successfully unpacked
+0000.032 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.032 () Using direct MySQL access; value of use_mysqli is: 1
+0000.048 () Max packet size: 32 MB
+0000.048 () Entering maintenance mode
+0000.048 () Enabling Maintenance mode&#8230;
+0000.049 () Backup of: http://localhost/cybersecurity
+0000.063 () Content URL: http://localhost/cybersecurity/wp-content
+0000.063 () Uploads URL: http://localhost/cybersecurity/wp-content/uploads
+0000.063 () Old table prefix: wp_
+0000.063 () Site information: multisite=0
+0000.065 () New table prefix: wpm9_
+0000.068 () Processing table (InnoDB): wp_options - will restore as: wpm9_options
+0000.122 () Restoring prior UD configuration (table: wpm9_options; keys: 93)
+0000.197 () Table prefix has changed: changing options table field(s) accordingly (options)
+0000.197 () Options table fields changed OK
+0000.202 () Processing table (InnoDB): wp_users - will restore as: wpm9_users
+0000.222 () Processing table (InnoDB): wp_usermeta - will restore as: wpm9_usermeta
+0000.243 () Table prefix has changed: changing usermeta table field(s) accordingly
+0000.244 () Usermeta table fields changed OK
+0000.244 () Processing table (InnoDB): wp_commentmeta - will restore as: wpm9_commentmeta
+0000.261 () Processing table (InnoDB): wp_comments - will restore as: wpm9_comments
+0000.281 () Processing table (InnoDB): wp_links - will restore as: wpm9_links
+0000.292 () Processing table (InnoDB): wp_postmeta - will restore as: wpm9_postmeta
+0000.338 () Processing table (InnoDB): wp_posts - will restore as: wpm9_posts
+0000.368 () Processing table (InnoDB): wp_term_relationships - will restore as: wpm9_term_relationships
+0000.385 () Processing table (InnoDB): wp_term_taxonomy - will restore as: wpm9_term_taxonomy
+0000.398 () Processing table (InnoDB): wp_termmeta - will restore as: wpm9_termmeta
+0000.410 () Processing table (InnoDB): wp_terms - will restore as: wpm9_terms
+0000.423 () Unlocking database and leaving maintenance mode
+0000.423 () Disabling Maintenance mode&#8230;
+0000.423 () Finished: lines processed: 41 in 0.39 seconds
+0000.424 () Cleaning up rubbish...
+0000.432 () Entity: plugins
+0000.432 () restore_backup(backup_file=backup_2018-09-13-1518_Cyber_Security_59c4322968c6-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:72:"/home/roderi84/public_html/cybersecurity.webee.com.mt/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0000.432 () Unpacking backup... (backup_2018-09-13-1518_Cyber_Security_59c4322968c6-plugins.zip, 8.6 Mb)
+0000.717 () Moving old data: filesystem method / updraft_dir is potentially possible
+0000.717 () Moving old data: can potentially use wp_filesystem method / -old
+0000.717 () Moving old data out of the way...
+0001.206 () Top-level entities being moved: updraftplus, sg-cachepress, jetpack, hello.php, akismet, index.php
+0001.212 () Moving unpacked backup into place...
+0001.423 () Top-level entities being moved: updraftplus, hello.php, akismet, advanced-custom-fields-pro, index.php, wp-scss
+0001.427 () Cleaning up rubbish...
+0001.429 () Entity: themes
+0001.429 () restore_backup(backup_file=backup_2018-09-13-1518_Cyber_Security_59c4322968c6-themes.zip, type=themes, info=a:2:{s:4:"path";s:71:"/home/roderi84/public_html/cybersecurity.webee.com.mt/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0001.429 () Unpacking backup... (backup_2018-09-13-1518_Cyber_Security_59c4322968c6-themes.zip, 4.5 Mb)
+0001.493 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.493 () Moving old data: can potentially use wp_filesystem method / -old
+0001.493 () Moving old data out of the way...
+0001.515 () Top-level entities being moved: twentyseventeen, twentysixteen, index.php, twentyfifteen
+0001.516 () Moving unpacked backup into place...
+0001.559 () Top-level entities being moved: cybersecurity, index.php, wp-bootstrap-starter
+0001.560 () Cleaning up rubbish...
+0001.562 () Entity: uploads
+0001.562 () restore_backup(backup_file=backup_2018-09-13-1518_Cyber_Security_59c4322968c6-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:72:"/home/roderi84/public_html/cybersecurity.webee.com.mt/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0001.562 () Unpacking backup... (backup_2018-09-13-1518_Cyber_Security_59c4322968c6-uploads.zip, 0.8 Mb)
+0001.566 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.566 () Moving old data: can potentially use wp_filesystem method / -old
+0001.567 () Moving old data out of the way...
+0001.567 () Moving unpacked backup into place...
+0001.571 () Cleaning up rubbish...
+0001.573 () Entity: others
+0001.573 () restore_backup(backup_file=backup_2018-09-13-1518_Cyber_Security_59c4322968c6-others.zip, type=others, info=a:2:{s:4:"path";s:64:"/home/roderi84/public_html/cybersecurity.webee.com.mt/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0001.573 () Unpacking backup... (backup_2018-09-13-1518_Cyber_Security_59c4322968c6-others.zip, 0 Mb)
+0001.574 () Cleaning up rubbish...
+0001.586 () Restore successful!
+0001.586 () Restore successful

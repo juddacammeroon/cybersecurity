@@ -1,0 +1,273 @@
+0000.001 (0) Opened log file at time: Fri, 05 Oct 2018 15:49:14 +0000 on http://217.71.178.45
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.15.2 WP: 4.9.8 PHP: 7.2.10 (cgi-fcgi, Windows NT CYSEC-TK-VM 10.0 build 14393 (Windows Server 2016) AMD64) MySQL: 8.0.12 WPLANG: en_US Server: Microsoft-IIS/10.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 63.8M | 66M) multisite: N openssl: N mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.010 (0) Free space on disk containing Updraft's temporary directory: 75761.2 MB
+0000.022 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.039 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.062 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1538667056, seconds_ago=87498)
+0000.079 (0) Set semaphore last lock (fd) time to 2018-10-05 15:49:14
+0000.084 (0) Semaphore lock (fd) complete
+0000.117 (0) Backup run: resumption=0, nonce=933e3e5285b2, begun at=1538754554 (0s ago), job type=backup
+0000.138 (0) Scheduling a resumption (1) after 300 seconds (1538754854) in case this run gets aborted
+0000.163 (0) Checking if we have a zip executable available
+0000.181 (0) Creation of backups of directories: beginning
+0000.195 (0) No backup of plugins: excluded by user's options
+0000.199 (0) No backup of themes: excluded by user's options
+0000.206 (0) No backup of uploads: excluded by user's options
+0000.209 (0) No backup of others: excluded by user's options
+0000.230 (0) Saving backup status to database (elements: 0)
+0000.242 (0) Beginning creation of database dump (WordPress DB)
+0000.278 (0) Table wpm9_options: Total expected rows (approximate): 385
+0000.323 (0) Table wpm9_options: Total rows added: 380 in 0.04 seconds
+0000.337 (0) Table wpm9_options: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_options.table.gz - 215.4 KB)
+0000.389 (0) Table wpm9_users: Total expected rows (approximate): 5
+0000.397 (0) Table wpm9_users: Total rows added: 5 in 0.00 seconds
+0000.413 (0) Table wpm9_users: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_users.table.gz - 1 KB)
+0000.457 (0) Table wpm9_usermeta: Total expected rows (approximate): 121
+0000.467 (0) Table wpm9_usermeta: Total rows added: 121 in 0.00 seconds
+0000.478 (0) Table wpm9_usermeta: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_usermeta.table.gz - 3.9 KB)
+0000.509 (0) Table wpm9_commentmeta: Total expected rows (approximate): 0
+0000.519 (0) Table wpm9_commentmeta: Total rows added: 0 in 0.00 seconds
+0000.523 (0) Table wpm9_commentmeta: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_commentmeta.table.gz - 0.4 KB)
+0000.543 (0) Table wpm9_comments: Total expected rows (approximate): 0
+0000.550 (0) Table wpm9_comments: Total rows added: 1 in 0.00 seconds
+0000.558 (0) Table wpm9_comments: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_comments.table.gz - 0.7 KB)
+0000.577 (0) Table wpm9_links: Total expected rows (approximate): 0
+0000.586 (0) Table wpm9_links: Total rows added: 0 in 0.00 seconds
+0000.601 (0) Table wpm9_links: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_links.table.gz - 0.5 KB)
+0000.621 (0) Table wpm9_postmeta: Total expected rows (approximate): 3356
+0000.676 (0) Table wpm9_postmeta: Total rows added: 3470 in 0.05 seconds
+0000.697 (0) Table wpm9_postmeta: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_postmeta.table.gz - 48.1 KB)
+0000.734 (0) Table wpm9_posts: Total expected rows (approximate): 722
+0000.795 (0) Table wpm9_posts: Total rows added: 785 in 0.05 seconds
+0000.803 (0) Table wpm9_posts: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_posts.table.gz - 98.9 KB)
+0000.868 (0) Table wpm9_term_relationships: Total expected rows (approximate): 234
+0000.887 (0) Table wpm9_term_relationships: Total rows added: 234 in 0.00 seconds
+0000.901 (0) Table wpm9_term_relationships: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_term_relationships.table.gz - 1 KB)
+0000.961 (0) Table wpm9_term_taxonomy: Total expected rows (approximate): 51
+0000.979 (0) Table wpm9_term_taxonomy: Total rows added: 51 in 0.00 seconds
+0000.999 (0) Table wpm9_term_taxonomy: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_term_taxonomy.table.gz - 0.8 KB)
+0001.042 (0) Table wpm9_termmeta: Total expected rows (approximate): 0
+0001.068 (0) Table wpm9_termmeta: Total rows added: 0 in 0.00 seconds
+0001.073 (0) Table wpm9_termmeta: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_termmeta.table.gz - 0.4 KB)
+0001.111 (0) Table wpm9_terms: Total expected rows (approximate): 51
+0001.120 (0) Table wpm9_terms: Total rows added: 51 in 0.00 seconds
+0001.131 (0) Table wpm9_terms: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_terms.table.gz - 1 KB)
+0001.181 (0) Table wpm9_gf_draft_submissions: Total expected rows (approximate): 0
+0001.204 (0) Table wpm9_gf_draft_submissions: Total rows added: 0 in 0.00 seconds
+0001.213 (0) Table wpm9_gf_draft_submissions: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_draft_submissions.table.gz - 0.4 KB)
+0001.261 (0) Table wpm9_gf_entry: Total expected rows (approximate): 0
+0001.277 (0) Table wpm9_gf_entry: Total rows added: 0 in 0.00 seconds
+0001.303 (0) Table wpm9_gf_entry: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_entry.table.gz - 0.6 KB)
+0001.364 (0) Table wpm9_gf_entry_meta: Total expected rows (approximate): 0
+0001.383 (0) Table wpm9_gf_entry_meta: Total rows added: 0 in 0.00 seconds
+0001.408 (0) Table wpm9_gf_entry_meta: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_entry_meta.table.gz - 0.4 KB)
+0001.473 (0) Table wpm9_gf_entry_notes: Total expected rows (approximate): 0
+0001.496 (0) Table wpm9_gf_entry_notes: Total rows added: 0 in 0.00 seconds
+0001.504 (0) Table wpm9_gf_entry_notes: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_entry_notes.table.gz - 0.4 KB)
+0001.557 (0) Table wpm9_gf_form: Total expected rows (approximate): 0
+0001.573 (0) Table wpm9_gf_form: Total rows added: 1 in 0.00 seconds
+0001.592 (0) Table wpm9_gf_form: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_form.table.gz - 0.4 KB)
+0001.645 (0) Table wpm9_gf_form_meta: Total expected rows (approximate): 1
+0001.651 (0) Table wpm9_gf_form_meta: Total rows added: 1 in 0.00 seconds
+0001.667 (0) Table wpm9_gf_form_meta: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_form_meta.table.gz - 1.4 KB)
+0001.722 (0) Table wpm9_gf_form_view: Total expected rows (approximate): 0
+0001.740 (0) Table wpm9_gf_form_view: Total rows added: 1 in 0.00 seconds
+0001.760 (0) Table wpm9_gf_form_view: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_form_view.table.gz - 0.4 KB)
+0001.826 (0) Table wpm9_icl_content_status: Total expected rows (approximate): 0
+0001.837 (0) Table wpm9_icl_content_status: Total rows added: 0 in 0.00 seconds
+0001.852 (0) Table wpm9_icl_content_status: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_content_status.table.gz - 0.3 KB)
+0001.914 (0) Table wpm9_icl_core_status: Total expected rows (approximate): 0
+0001.931 (0) Table wpm9_icl_core_status: Total rows added: 0 in 0.00 seconds
+0001.956 (0) Table wpm9_icl_core_status: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_core_status.table.gz - 0.4 KB)
+0002.005 (0) Table wpm9_icl_flags: Total expected rows (approximate): 63
+0002.028 (0) Table wpm9_icl_flags: Total rows added: 63 in 0.00 seconds
+0002.047 (0) Table wpm9_icl_flags: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_flags.table.gz - 0.9 KB)
+0002.087 (0) Table wpm9_icl_languages: Total expected rows (approximate): 63
+0002.104 (0) Table wpm9_icl_languages: Total rows added: 63 in 0.00 seconds
+0002.123 (0) Table wpm9_icl_languages: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_languages.table.gz - 1.6 KB)
+0002.165 (0) Table wpm9_icl_languages_translations: Total expected rows (approximate): 3969
+0002.225 (0) Table wpm9_icl_languages_translations: Total rows added: 3969 in 0.04 seconds
+0002.241 (0) Table wpm9_icl_languages_translations: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_languages_translations.table.gz - 33.1 KB)
+0002.308 (0) Table wpm9_icl_locale_map: Total expected rows (approximate): 2
+0002.330 (0) Table wpm9_icl_locale_map: Total rows added: 2 in 0.00 seconds
+0002.336 (0) Table wpm9_icl_locale_map: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_locale_map.table.gz - 0.3 KB)
+0002.397 (0) Table wpm9_icl_message_status: Total expected rows (approximate): 0
+0002.415 (0) Table wpm9_icl_message_status: Total rows added: 0 in 0.00 seconds
+0002.429 (0) Table wpm9_icl_message_status: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_message_status.table.gz - 0.4 KB)
+0002.477 (0) Table wpm9_icl_mo_files_domains: Total expected rows (approximate): 0
+0002.502 (0) Table wpm9_icl_mo_files_domains: Total rows added: 0 in 0.00 seconds
+0002.509 (0) Table wpm9_icl_mo_files_domains: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_mo_files_domains.table.gz - 0.5 KB)
+0002.572 (0) Table wpm9_icl_node: Total expected rows (approximate): 0
+0002.591 (0) Table wpm9_icl_node: Total rows added: 0 in 0.00 seconds
+0002.600 (0) Table wpm9_icl_node: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_node.table.gz - 0.3 KB)
+0002.667 (0) Table wpm9_icl_reminders: Total expected rows (approximate): 0
+0002.691 (0) Table wpm9_icl_reminders: Total rows added: 0 in 0.00 seconds
+0002.716 (0) Table wpm9_icl_reminders: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_reminders.table.gz - 0.3 KB)
+0002.771 (0) Table wpm9_icl_string_packages: Total expected rows (approximate): 11
+0002.791 (0) Table wpm9_icl_string_packages: Total rows added: 11 in 0.00 seconds
+0002.807 (0) Table wpm9_icl_string_packages: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_packages.table.gz - 0.8 KB)
+0002.845 (0) Table wpm9_icl_string_pages: Total expected rows (approximate): 69
+0002.853 (0) Table wpm9_icl_string_pages: Total rows added: 69 in 0.00 seconds
+0002.858 (0) Table wpm9_icl_string_pages: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_pages.table.gz - 0.6 KB)
+0002.885 (0) Table wpm9_icl_string_positions: Total expected rows (approximate): 0
+0002.892 (0) Table wpm9_icl_string_positions: Total rows added: 0 in 0.00 seconds
+0002.902 (0) Table wpm9_icl_string_positions: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_positions.table.gz - 0.4 KB)
+0002.923 (0) Table wpm9_icl_string_status: Total expected rows (approximate): 0
+0002.933 (0) Table wpm9_icl_string_status: Total rows added: 0 in 0.00 seconds
+0002.944 (0) Table wpm9_icl_string_status: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_status.table.gz - 0.4 KB)
+0002.986 (0) Table wpm9_icl_string_translations: Total expected rows (approximate): 0
+0002.994 (0) Table wpm9_icl_string_translations: Total rows added: 0 in 0.00 seconds
+0003.005 (0) Table wpm9_icl_string_translations: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_translations.table.gz - 0.5 KB)
+0003.031 (0) Table wpm9_icl_string_urls: Total expected rows (approximate): 11
+0003.039 (0) Table wpm9_icl_string_urls: Total rows added: 11 in 0.00 seconds
+0003.045 (0) Table wpm9_icl_string_urls: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_urls.table.gz - 0.5 KB)
+0003.079 (0) Table wpm9_icl_strings: Total expected rows (approximate): 758
+0003.109 (0) Table wpm9_icl_strings: Total rows added: 758 in 0.02 seconds
+0003.115 (0) Table wpm9_icl_strings: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_strings.table.gz - 47.5 KB)
+0003.162 (0) Table wpm9_icl_translate: Total expected rows (approximate): 35
+0003.185 (0) Table wpm9_icl_translate: Total rows added: 35 in 0.00 seconds
+0003.195 (0) Table wpm9_icl_translate: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translate.table.gz - 5.7 KB)
+0003.217 (0) Table wpm9_icl_translate_job: Total expected rows (approximate): 4
+0003.225 (0) Table wpm9_icl_translate_job: Total rows added: 4 in 0.00 seconds
+0003.230 (0) Table wpm9_icl_translate_job: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translate_job.table.gz - 0.5 KB)
+0003.348 (0) Table wpm9_icl_translation_batches: Total expected rows (approximate): 3
+0003.355 (0) Table wpm9_icl_translation_batches: Total rows added: 3 in 0.00 seconds
+0003.364 (0) Table wpm9_icl_translation_batches: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translation_batches.table.gz - 0.5 KB)
+0003.395 (0) Table wpm9_icl_translation_status: Total expected rows (approximate): 160
+0003.407 (0) Table wpm9_icl_translation_status: Total rows added: 160 in 0.01 seconds
+0003.416 (0) Table wpm9_icl_translation_status: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translation_status.table.gz - 8 KB)
+0003.447 (0) Table wpm9_icl_translations: Total expected rows (approximate): 606
+0003.459 (0) Table wpm9_icl_translations: Total rows added: 606 in 0.01 seconds
+0003.478 (0) Table wpm9_icl_translations: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translations.table.gz - 5.6 KB)
+0003.526 (0) Table wpm9_wfblockediplog: Total expected rows (approximate): 0
+0003.531 (0) Table wpm9_wfblockediplog: Total rows added: 0 in 0.00 seconds
+0003.541 (0) Table wpm9_wfblockediplog: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfblockediplog.table.gz - 0.3 KB)
+0003.582 (0) Table wpm9_wfblocks7: Total expected rows (approximate): 0
+0003.589 (0) Table wpm9_wfblocks7: Total rows added: 0 in 0.00 seconds
+0003.595 (0) Table wpm9_wfblocks7: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfblocks7.table.gz - 0.4 KB)
+0003.635 (0) Table wpm9_wfconfig: Total expected rows (approximate): 233
+0003.698 (0) Table wpm9_wfconfig: Total rows added: 235 in 0.06 seconds
+0003.709 (0) Table wpm9_wfconfig: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfconfig.table.gz - 950.8 KB)
+0003.750 (0) Table wpm9_wfcrawlers: Total expected rows (approximate): 0
+0003.758 (0) Table wpm9_wfcrawlers: Total rows added: 0 in 0.00 seconds
+0003.773 (0) Table wpm9_wfcrawlers: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfcrawlers.table.gz - 0.3 KB)
+0003.806 (0) Table wpm9_wffilechanges: Total expected rows (approximate): 0
+0003.812 (0) Table wpm9_wffilechanges: Total rows added: 0 in 0.00 seconds
+0003.818 (0) Table wpm9_wffilechanges: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wffilechanges.table.gz - 0.3 KB)
+0003.839 (0) Table wpm9_wffilemods: Total expected rows (approximate): 9574
+0004.093 (0) Table wpm9_wffilemods: Total rows added: 9605 in 0.24 seconds
+0004.103 (0) Table wpm9_wffilemods: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wffilemods.table.gz - 857.4 KB)
+0004.152 (0) Table wpm9_wfhits: Total expected rows (approximate): 502
+0004.178 (0) Table wpm9_wfhits: Total rows added: 502 in 0.01 seconds
+0004.208 (0) Table wpm9_wfhits: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfhits.table.gz - 11.1 KB)
+0004.244 (0) Table wpm9_wfhoover: Total expected rows (approximate): 0
+0004.260 (0) Table wpm9_wfhoover: Total rows added: 0 in 0.00 seconds
+0004.279 (0) Table wpm9_wfhoover: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfhoover.table.gz - 0.3 KB)
+0004.332 (0) Table wpm9_wfissues: Total expected rows (approximate): 1
+0004.338 (0) Table wpm9_wfissues: Total rows added: 1 in 0.00 seconds
+0004.353 (0) Table wpm9_wfissues: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfissues.table.gz - 1 KB)
+0004.410 (0) Table wpm9_wfknownfilelist: Total expected rows (approximate): 10001
+0004.540 (0) Table wpm9_wfknownfilelist: Total rows added: 9605 in 0.13 seconds
+0004.554 (0) Table wpm9_wfknownfilelist: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfknownfilelist.table.gz - 104.4 KB)
+0004.629 (0) Table wpm9_wflivetraffichuman: Total expected rows (approximate): 3
+0004.638 (0) Table wpm9_wflivetraffichuman: Total rows added: 3 in 0.00 seconds
+0004.654 (0) Table wpm9_wflivetraffichuman: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wflivetraffichuman.table.gz - 0.5 KB)
+0004.725 (0) Table wpm9_wflocs: Total expected rows (approximate): 2
+0004.749 (0) Table wpm9_wflocs: Total rows added: 2 in 0.00 seconds
+0004.760 (0) Table wpm9_wflocs: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wflocs.table.gz - 0.5 KB)
+0004.811 (0) Table wpm9_wflogins: Total expected rows (approximate): 2
+0004.825 (0) Table wpm9_wflogins: Total rows added: 2 in 0.00 seconds
+0004.837 (0) Table wpm9_wflogins: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wflogins.table.gz - 0.6 KB)
+0004.884 (0) Table wpm9_wfnotifications: Total expected rows (approximate): 2
+0004.893 (0) Table wpm9_wfnotifications: Total rows added: 2 in 0.00 seconds
+0004.906 (0) Table wpm9_wfnotifications: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfnotifications.table.gz - 0.5 KB)
+0004.953 (0) Table wpm9_wfpendingissues: Total expected rows (approximate): 0
+0004.963 (0) Table wpm9_wfpendingissues: Total rows added: 0 in 0.00 seconds
+0004.979 (0) Table wpm9_wfpendingissues: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfpendingissues.table.gz - 0.4 KB)
+0005.036 (0) Table wpm9_wfreversecache: Total expected rows (approximate): 2
+0005.044 (0) Table wpm9_wfreversecache: Total rows added: 2 in 0.00 seconds
+0005.052 (0) Table wpm9_wfreversecache: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfreversecache.table.gz - 0.4 KB)
+0005.090 (0) Table wpm9_wfsnipcache: Total expected rows (approximate): 0
+0005.103 (0) Table wpm9_wfsnipcache: Total rows added: 0 in 0.00 seconds
+0005.119 (0) Table wpm9_wfsnipcache: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfsnipcache.table.gz - 0.4 KB)
+0005.175 (0) Table wpm9_wfstatus: Total expected rows (approximate): 565
+0005.186 (0) Table wpm9_wfstatus: Total rows added: 565 in 0.01 seconds
+0005.203 (0) Table wpm9_wfstatus: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfstatus.table.gz - 10.4 KB)
+0005.238 (0) Table wpm9_wftrafficrates: Total expected rows (approximate): 0
+0005.243 (0) Table wpm9_wftrafficrates: Total rows added: 0 in 0.00 seconds
+0005.248 (0) Table wpm9_wftrafficrates: finishing file (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wftrafficrates.table.gz - 0.3 KB)
+0005.279 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_options.table.gz (1/60): adding to final database dump
+0005.318 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_users.table.gz (2/60): adding to final database dump
+0005.335 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_usermeta.table.gz (3/60): adding to final database dump
+0005.347 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_commentmeta.table.gz (4/60): adding to final database dump
+0005.369 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_comments.table.gz (5/60): adding to final database dump
+0005.390 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_links.table.gz (6/60): adding to final database dump
+0005.400 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_postmeta.table.gz (7/60): adding to final database dump
+0005.433 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_posts.table.gz (8/60): adding to final database dump
+0005.471 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_term_relationships.table.gz (9/60): adding to final database dump
+0005.478 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_term_taxonomy.table.gz (10/60): adding to final database dump
+0005.484 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_termmeta.table.gz (11/60): adding to final database dump
+0005.496 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_terms.table.gz (12/60): adding to final database dump
+0005.509 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_draft_submissions.table.gz (13/60): adding to final database dump
+0005.526 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_entry.table.gz (14/60): adding to final database dump
+0005.537 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_entry_meta.table.gz (15/60): adding to final database dump
+0005.552 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_entry_notes.table.gz (16/60): adding to final database dump
+0005.558 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_form.table.gz (17/60): adding to final database dump
+0005.570 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_form_meta.table.gz (18/60): adding to final database dump
+0005.583 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_gf_form_view.table.gz (19/60): adding to final database dump
+0005.589 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_content_status.table.gz (20/60): adding to final database dump
+0005.599 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_core_status.table.gz (21/60): adding to final database dump
+0005.619 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_flags.table.gz (22/60): adding to final database dump
+0005.635 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_languages.table.gz (23/60): adding to final database dump
+0005.643 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_languages_translations.table.gz (24/60): adding to final database dump
+0005.662 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_locale_map.table.gz (25/60): adding to final database dump
+0005.678 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_message_status.table.gz (26/60): adding to final database dump
+0005.698 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_mo_files_domains.table.gz (27/60): adding to final database dump
+0005.703 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_node.table.gz (28/60): adding to final database dump
+0005.711 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_reminders.table.gz (29/60): adding to final database dump
+0005.729 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_packages.table.gz (30/60): adding to final database dump
+0005.739 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_pages.table.gz (31/60): adding to final database dump
+0005.752 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_positions.table.gz (32/60): adding to final database dump
+0005.773 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_status.table.gz (33/60): adding to final database dump
+0005.782 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_translations.table.gz (34/60): adding to final database dump
+0005.791 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_string_urls.table.gz (35/60): adding to final database dump
+0005.805 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_strings.table.gz (36/60): adding to final database dump
+0005.832 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translate.table.gz (37/60): adding to final database dump
+0005.836 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translate_job.table.gz (38/60): adding to final database dump
+0005.846 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translation_batches.table.gz (39/60): adding to final database dump
+0005.853 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translation_status.table.gz (40/60): adding to final database dump
+0005.871 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_icl_translations.table.gz (41/60): adding to final database dump
+0005.890 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfblockediplog.table.gz (42/60): adding to final database dump
+0005.901 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfblocks7.table.gz (43/60): adding to final database dump
+0005.910 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfconfig.table.gz (44/60): adding to final database dump
+0005.986 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfcrawlers.table.gz (45/60): adding to final database dump
+0006.070 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wffilechanges.table.gz (46/60): adding to final database dump
+0006.084 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wffilemods.table.gz (47/60): adding to final database dump
+0006.200 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfhits.table.gz (48/60): adding to final database dump
+0006.215 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfhoover.table.gz (49/60): adding to final database dump
+0006.225 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfissues.table.gz (50/60): adding to final database dump
+0006.246 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfknownfilelist.table.gz (51/60): adding to final database dump
+0006.285 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wflivetraffichuman.table.gz (52/60): adding to final database dump
+0006.306 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wflocs.table.gz (53/60): adding to final database dump
+0006.322 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wflogins.table.gz (54/60): adding to final database dump
+0006.336 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfnotifications.table.gz (55/60): adding to final database dump
+0006.346 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfpendingissues.table.gz (56/60): adding to final database dump
+0006.365 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfreversecache.table.gz (57/60): adding to final database dump
+0006.385 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfsnipcache.table.gz (58/60): adding to final database dump
+0006.400 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wfstatus.table.gz (59/60): adding to final database dump
+0006.415 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db-table-wpm9_wftrafficrates.table.gz (60/60): adding to final database dump
+0006.422 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db.gz: finished writing out complete database file (2384 KB)
+0006.506 (0) Total database tables backed up: 60 (backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db.gz, size: 2467557, sha256)
+0006.570 (0) backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db.gz: db: This file has not yet been successfully uploaded: will queue
+0006.585 (0) Saving backup history. Total backup size: 2.4 MB
+0006.620 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0006.664 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0006.678 (0) No remote despatch: user chose no remote backup service
+0006.693 (0) Recording as successfully uploaded: backup_2018-10-05-1549_Cyber_Security_933e3e5285b2-db.gz
+0006.726 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0006.741 (0) Resume backup (933e3e5285b2, 0): finish run
+0006.787 (0) Decremented the semaphore (fd) by 1
+0006.819 (0) Semaphore (fd) unlocked
+0006.836 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0006.883 (0) No email will/can be sent - the user has not configured an email address.
+0006.897 (0) The backup apparently succeeded and is now complete
