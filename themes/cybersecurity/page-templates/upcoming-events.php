@@ -97,7 +97,11 @@ if (isset($type)) {
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="entry-title"><?php echo $type == 'past_events' ? 'Past Events' : ($type == 'ongoing_events' ? 'Ongoing Events' : 'Upcoming Events'); ?></h1>
+					<?php if (ICL_LANGUAGE_CODE == "mt") : ?>
+						<h1 class="entry-title"><?php echo $type == 'past_events' ? 'Avvenimenti Passati' : ($type == 'ongoing_events' ? 'Avvenimenti Kurrenti' : 'Avvenimenti Futuri'); ?></h1>
+					<?php else : ?>
+						<h1 class="entry-title"><?php echo $type == 'past_events' ? 'Past Events' : ($type == 'ongoing_events' ? 'Ongoing Events' : 'Upcoming Events'); ?></h1>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

@@ -22,7 +22,7 @@ get_header();
 				<div class="row">
 					<div class="col-md-12">
 						<div class="press-releases">
-							<h2>Press Releases</h2>
+							<h2><?php echo ICL_LANGUAGE_CODE == "mt" ? 'Stqarrijiet għall-Istampa' : 'Press Releases' ; ?></h2>
 							<div class="press-releases-slider">
 								<?php
 
@@ -72,7 +72,7 @@ get_header();
 							</div>
 						</div>
 						<div class="media-kit">
-							<h2>Media Kit</h2>
+							<h2><?php echo ICL_LANGUAGE_CODE == "mt" ? 'Għodda għall-Istampa' : 'Media Kit' ; ?></h2>
 							<div class="media-kit-slider">
 								<?php
 								
@@ -125,10 +125,7 @@ get_header();
 						<div class="col-md-12">
 							<div class="boxed strategy-section">
 								<div class="caption float-left">
-									<h2>Strategy Download.</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-									</p>
+									<h2><?php echo ICL_LANGUAGE_CODE == "mt" ? 'Niżżel kopja tal-Istrateġija' : 'Strategy Download' ; ?></h2>
 								</div>
 								<a href="#" class="float-right cs-button download-pdf-button"><i class="far fa-file-pdf"></i> Download PDF</a>
 							</div>

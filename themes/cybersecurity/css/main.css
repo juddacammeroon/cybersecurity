@@ -262,6 +262,18 @@ header#masthead .cs-head #cs-custom-menu .menu-class-name li.menu-item:hover > u
 h2.circular-std {
   font-size: 3.929rem !important;
 }
+.facebook-like-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px 0 0 0;
+  box-shadow: 0 0 2px #414141;
+}
+.facebook-like-box ul {
+  margin-bottom: 0;
+}
 body:not(.theme-preset-active) header#masthead {
   position: fixed;
   top: 3.5rem;
@@ -827,6 +839,8 @@ body .default-page-wrapper .strategy-download .strategy-section h2 {
   color: #111;
   font-weight: 500;
   margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 body .default-page-wrapper .strategy-download .strategy-section p {
   color: #5e5e5e;
@@ -837,7 +851,7 @@ body .default-page-wrapper .strategy-download .strategy-section p {
 body .default-page-wrapper .strategy-download .strategy-section a.download-pdf-button {
   font-size: 1.286rem;
   width: 16.29rem;
-  margin: 1.786rem 0px;
+  margin: -0.3571rem 0px;
 }
 body .default-page-wrapper .strategy-download .strategy-section a.download-pdf-button i {
   font-size: 1.929rem;
@@ -1172,20 +1186,24 @@ body.home .banner .banner-caption {
 body.home .banner .banner-caption .row .col-md-7, body.home .banner .banner-caption .row .col-lg-7 {
   position: relative;
 }
-body.home .banner .banner-caption .caption {
-  position: absolute;
-  top: 50%;
-  left: 1.071rem;
-  right: 1.071rem;
-  transform: translate(0, -50%);
+body.home .banner .banner-caption #banner-slider {
+  min-height: 21.43rem;
+  position: relative;
 }
-body.home .banner .banner-caption .caption h2 {
+body.home .banner .banner-caption #banner-slider .caption {
+  /*position: absolute;
+   top: 50%;
+   left: 1.071rem;
+   right: 1.071rem;
+   transform: translate(0, -50%);*/
+}
+body.home .banner .banner-caption #banner-slider .caption h2 {
   font-size: 5rem;
   font-weight: 500;
   padding-right: 0.7143rem;
   color: #302f2f;
 }
-body.home .banner .banner-caption .caption p {
+body.home .banner .banner-caption #banner-slider .caption p {
   color: #4b4b4b;
   font-size: 1.714rem;
 }

@@ -17,13 +17,25 @@
             <div class="site-info">
                 &copy; Copyright <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?> <?php echo date('Y'); ?>
                 <span class="sep"> | </span>
-                <a class="credits" href="https://www.web-design-malta.com/" target="_blank" title="Wordpress Technical Support" alt="Bootstrap Wordpress Theme"><?php echo esc_html__('All Rights Reserved','wp-bootstrap-starter'); ?></a>
+                <a class="credits" href="https://www.web-design-malta.com/" target="_blank" title="Wordpress Technical Support" alt="Bootstrap Wordpress Theme"><?php echo ICL_LANGUAGE_CODE == "mt" ? esc_html__('Kull Dritt Riżervat','wp-bootstrap-starter') : esc_html__('All Rights Reserved','wp-bootstrap-starter') ; ?></a>
                 <div class="social-icons">
                     <?php dynamic_sidebar( 'social-media-icons' ); ?>
                 </div>
             </div><!-- close .site-info -->
 		</div>
 	</footer><!-- #colophon -->
+
+<div class="facebook-like-box">
+	<ul class="list-inline">
+		<li class="list-inline-item">
+			Like us on Facebook
+		</li>
+		<li class="list-inline-item">
+			<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcybersecuremt%2F&width=51&layout=button&action=like&size=small&show_faces=true&share=false&height=65&appId" width="51" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		</li>
+	</ul>
+</div>
+
 <?php endif; ?>
 </div><!-- #page -->
 <?php wp_footer(); ?>
@@ -32,9 +44,9 @@ new WOW().init();
 function initGreetings() {
     var thehours = new Date().getHours();
     var themessage;
-    var morning = ('Good Morning');
-    var afternoon = ('Good Afternoon');
-    var evening = ('Good Evening');
+    var morning = "<?php echo ICL_LANGUAGE_CODE == 'mt' ? 'L-Ghodwa t-tajba' : 'Good Morning' ; ?>";
+    var afternoon = "<?php echo ICL_LANGUAGE_CODE == 'mt' ? 'Il-wara nofsinhar it-tajjeb' : 'Good Afternoon' ; ?>";
+    var evening = "<?php echo ICL_LANGUAGE_CODE == 'mt' ? 'Il-Lejl it-Tajjeb' : 'Good Evening' ; ?>";
 
     if (thehours >= 0 && thehours < 12) {
         themessage = morning; 
@@ -161,6 +173,15 @@ jQuery(document).ready(function(){
             arrows: false,
             slidesToShow: 3,
             slidesToScroll: 3
+        });
+    }
+	if (jQuery('#banner-slider').length > 0) {
+        jQuery('#banner-slider').slick({
+            dots: false,
+            arrows: false,
+			fade: true,
+			autoplay: true,
+			autoplaySpeed: 4000
         });
     }
     if (jQuery('.testimonial-container').length > 0) {

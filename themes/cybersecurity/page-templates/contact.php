@@ -22,15 +22,26 @@ get_header();
 				<div class="row">
 					<div class="col-md-7">
 						<div class="contact-form">
-							<?php echo do_shortcode('[contact-form-7 id="854" title="Contact form 1"]'); ?>
+							<?php if (ICL_LANGUAGE_CODE == "mt") : ?>
+								<?php echo do_shortcode('[contact-form-7 id="1045" title="Contact form Maltese"]'); ?>
+							<?php else : ?>
+								<?php echo do_shortcode('[contact-form-7 id="854" title="Contact form 1"]'); ?>
+							<?php endif; ?>
 						</div>
 					</div>
 					<div class="col-md-5">
 						<div class="contact-info">
-							<h2>Don’t Hesitate to contact with us for any kind of information</h2>
-							<p>
-								Call us for imiditate support this number <a href="tel:(00356) 2123 4710">(00356) 2123 4710</a>
-							</p>
+							<?php if (ICL_LANGUAGE_CODE == "mt") : ?>
+								<h2>Agħmel kuntatt magħna għal kull tip ta' informazzjoni</h2>
+								<p>
+									Għal għajnuna mmedjata ċemplilna fuq dan in-numru <a href="tel:(00356) 2123 4710">(00356) 2123 4710</a>
+								</p>
+							<?php else : ?>
+								<h2>Don’t Hesitate to contact with us for any kind of information</h2>
+								<p>
+									Call us for immediate support this number <a href="tel:(00356) 2123 4710">(00356) 2123 4710</a>
+								</p>
+							<?php endif; ?>
 							<ul class="list-inline">
 								<li class="list-inline-item facebook">
 									<a href="https://www.facebook.com/cybersecuremt/" target="_blank">

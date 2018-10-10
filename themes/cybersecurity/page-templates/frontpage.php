@@ -17,20 +17,30 @@ get_header();
 			<div class="banner-caption">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-lg-9">
-							<div class="caption">
-								<?php if($banner_title) : ?>
-									<h2 class="wow fadeInLeft" data-wow-delay="5s"><?php echo $banner_title; ?></h2>
-								<?php endif; ?>
-								<?php if($banner_subtitle) : ?>
-									<p class="wow fadeInLeft" data-wow-delay="0.25s">
-										<?php echo $banner_subtitle; ?>
-									</p>
-								<?php endif; ?>
-								<?php if($banner_button) : ?>
-									<a href="<?php echo $banner_button['button_url'] ?>" class="cs-button red wow fadeInLeft" data-wow-delay="5s" <?php echo $banner_button['open_in_new_tab'] ? 'target="_blank"' : ''; ?>><?php echo $banner_button['button_text']; ?></a>
-								<?php endif; ?>
+						<div class="col-md-12 col-lg-12">
+							<?php
+							
+							$banner_slider = get_field('cs_home_banner_slider', get_the_ID(), TRUE);
+
+							?>
+							<?php if($banner_slider) : ?>
+
+							<div id="banner-slider">
+								<?php foreach($banner_slider as $slide) : ?>
+
+								<div class="caption">
+									<?php if($slide['caption']) : ?>
+										<h2 class="wow fadeInLeft" data-wow-delay="5s"><?php echo $slide['caption']; ?></h2>
+									<?php endif; ?>
+									<?php if($slide['cta_button']) : ?>
+										<a href="<?php echo $slide['cta_button']['button_url'] ?>" class="cs-button red wow fadeInLeft" data-wow-delay="5s" <?php echo $slide['cta_button']['open_in_new_tab'] ? 'target="_blank"' : ''; ?>><?php echo $slide['cta_button']['button_text']; ?></a>
+									<?php endif; ?>
+								</div>
+
+								<?php endforeach; ?>
 							</div>
+
+							<?php endif; ?>
 						</div>
 						<div class="col-md-5 force-hide">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner.png">
@@ -47,10 +57,16 @@ get_header();
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="section-title">Latest News & Articles</h2>
+							<h2 class="section-title">
+								<?php if (ICL_LANGUAGE_CODE == "mt") : ?>
+									L-Aħħar Aħbarijiet u Artikli
+								<?php else : ?>
+									Latest News & Articles
+								<?php endif; ?>
+							</h2>
 							<div class="buttons">
-								<a href="javascript:toggleNewsArticles('news')" class="post-button" id="the-news-button">Latest News</a>
-								<a href="javascript:toggleNewsArticles('articles')" class="post-button" id="the-articles-button">Recent Articles</a>
+								<a href="javascript:toggleNewsArticles('news')" class="post-button" id="the-news-button"><?php echo ICL_LANGUAGE_CODE == "mt" ? "L-Aħħar Aħbarijiet" : "Latest News" ?></a>
+								<a href="javascript:toggleNewsArticles('articles')" class="post-button" id="the-articles-button"><?php echo ICL_LANGUAGE_CODE == "mt" ? "Artikli Riċenti" : "Recent Articles" ?></a>
 							</div>
 							<div class="article-list slider" id="the-articles">
 								<?php
@@ -150,7 +166,7 @@ get_header();
 					<?php endif; ?>
 					<div class="<?php echo $security_tips_image ? 'col-lg-6' : 'col-lg-12'; ?>">
 						<div class="security-caption">
-							<h5>Security Tips</h5>
+							<h5><?php echo ICL_LANGUAGE_CODE == "mt" ? "Pariri zghar dwar Sigurtá" : "Security Tips" ?></h5>
 
 							<?php if($security_tips_title) : ?>
 							<h2>
@@ -178,35 +194,40 @@ get_header();
 		</div>
 		<?php endif; ?>
 		<?php
-
-		$testimonials = get_posts(
+		
+		$testimonials = new WP_Query(
 			array(
 				'posts_per_page' => -1,
-				'post_type' => 'testimonial'
+				'post_type' => 'testimonial',
+				'suppress_filters' => false
 			)
 		);
 
 		?>
-		<?php if (count($testimonials) > 0) : ?>
+		<pre class="force-hide">
+			<?php print_r($testimonials); ?>
+		</pre>
+		<?php if ($testimonials->have_posts()) : ?>
 		<div class="testimonials" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/testimonials-bg.png);">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="section-title" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/heading-quote.png);">Testimonials</h2>
+						<h2 class="section-title" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/heading-quote.png);"><?php echo ICL_LANGUAGE_CODE == "mt" ? "Testimonjanzi" : "Testimonials" ?></h2>
 						<div class="testimonial-container">
-							<?php foreach($testimonials as $testimonial) : ?>
+							<?php while($testimonials->have_posts()) : $testimonials->the_post(); ?>
+							<?php //foreach($testimonials as $testimonial) : ?>
 							<div class="slide">
 								<div class="testimonial-content">
-									<?php echo apply_filters('the_content',$testimonial->post_content); ?>
+									<?php echo apply_filters('the_content',get_the_content()); ?>
 									<div class="boxed testimonial-author">
-										<?php if(has_post_thumbnail($testimonial->ID)) : ?>
-										<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($testimonial->ID)); ?>">
+										<?php if(has_post_thumbnail(get_the_ID())) : ?>
+										<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>">
 										<?php endif; ?>
 										<div class="info">
 											<p>
-												<?php echo $testimonial->post_title; ?>
-												<?php if(get_field('cs_testimonial_position',$testimonial->ID,TRUE)) : ?>
-												<span><?php echo get_field('cs_testimonial_position',$testimonial->ID,TRUE); ?></span>
+												<?php echo get_the_title(); ?>
+												<?php if(get_field('cs_testimonial_position',get_the_ID(),TRUE)) : ?>
+												<span><?php echo get_field('cs_testimonial_position',get_the_ID(),TRUE); ?></span>
 												<?php endif; ?>
 											</p>
 										</div>
@@ -214,7 +235,8 @@ get_header();
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/quote.png" class="quote">
 								</div>
 							</div>
-							<?php endforeach; ?>
+							<?php //endforeach; ?>
+							<?php endwhile; wp_reset_query(); ?>
 						</div>
 					</div>
 				</div>

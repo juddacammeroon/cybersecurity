@@ -44,7 +44,7 @@ get_header(); ?>
 								<h2><?php the_title(); ?></h2>
 								
 								<p class="excerpt">
-									<?php echo wp_trim_words(wp_strip_all_tags($post->post_content),43,''); ?>
+									<?php echo wp_trim_words(strip_shortcodes(wp_strip_all_tags(preg_replace("~(?:\[/?)[^/\]]+/?\]~s", '', $post->post_content))),43,''); ?>
 								</p>
 
 								<a href="<?php echo get_permalink(get_the_ID()); ?>" class="read-more">Read More &rarr;</a>
