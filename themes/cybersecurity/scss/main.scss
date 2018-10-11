@@ -1528,6 +1528,14 @@ body.home {
 		padding: 10.21rem 0px 15rem;
 		z-index: 1;
 		position: relative;
+		
+		.image-holder {
+			width: 100%;
+			min-height: 40.71rem;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
 
 		.security-caption {
 
@@ -1762,9 +1770,13 @@ body.page-template-contact {
 				.contact-form {
 					.form-control {
 						margin-bottom: 2.143rem;
+						font-size: 14px;
 					}
 					textarea.form-control {
 						min-height: 13.43rem;
+					}
+					input.cs-button {
+						font-size: 14px;
 					}
 				}
 				.contact-info {

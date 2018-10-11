@@ -1317,6 +1317,13 @@ body.home .security-tips {
   z-index: 1;
   position: relative;
 }
+body.home .security-tips .image-holder {
+  width: 100%;
+  min-height: 40.71rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 body.home .security-tips .security-caption h2 {
   font-size: 3.429rem;
   color: #424242;
@@ -1508,9 +1515,13 @@ body.page-template-contact #content.site-content .default-page-wrapper .wrapper 
 }
 body.page-template-contact #content.site-content .default-page-wrapper .wrapper .contact-form .form-control {
   margin-bottom: 2.143rem;
+  font-size: 14px;
 }
 body.page-template-contact #content.site-content .default-page-wrapper .wrapper .contact-form textarea.form-control {
   min-height: 13.43rem;
+}
+body.page-template-contact #content.site-content .default-page-wrapper .wrapper .contact-form input.cs-button {
+  font-size: 14px;
 }
 body.page-template-contact #content.site-content .default-page-wrapper .wrapper .contact-info h2 {
   font-weight: 400;

@@ -127,7 +127,7 @@ get_header();
 								<div class="caption float-left">
 									<h2><?php echo ICL_LANGUAGE_CODE == "mt" ? 'Niżżel kopja tal-Istrateġija' : 'Strategy Download' ; ?></h2>
 								</div>
-								<a href="#" class="float-right cs-button download-pdf-button"><i class="far fa-file-pdf"></i> Download PDF</a>
+								<a href="http://217.71.178.45/wp-content/uploads/2018/09/Mita-_Malta-Cyber-Security-Strategy-Book.pdf" class="float-right cs-button download-pdf-button" download><i class="far fa-file-pdf"></i> Download PDF</a>
 							</div>
 						</div>
 					</div>

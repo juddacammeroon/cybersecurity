@@ -13,7 +13,7 @@ get_header(); ?>
 				<div class="col-md-12">
 					<header class="page-header">
 						<?php $query = get_queried_object(); ?>
-						<h1 class="entry-title"><?php echo $query->cat_name; ?>.</h1>
+						<h1 class="entry-title"><?php echo $query->cat_name; ?></h1>
 					</header><!-- .page-header -->
 				</div>
 			</div>

@@ -5,14 +5,6 @@ get_header();
 <?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
 	<div class="homepage-wrapper">
-		<?php
-
-		$banner_title = get_field('cs_home_banner_caption_title');
-		$banner_subtitle = get_field('cs_home_banner_caption_subtitle');
-		$banner_button = get_field('cs_home_banner_cta_button');
-
-		?>
-		<?php if($banner_title || $banner_subtitle || $banner_button) : ?>
 		<div class="banner">
 			<div class="banner-caption">
 				<div class="container">
@@ -50,7 +42,6 @@ get_header();
 			</div>
 			<a href="javascript:goDown();" class="go-down-button"><i class="fas fa-angle-down"></i></a>
 		</div>
-		<?php endif; ?>
 
 		<div class="news-articles">
 			<div class="wrapper">
@@ -147,48 +138,50 @@ get_header();
 			</div>
 		</div>
 		<?php
-
+/*
 		$security_tips_image = get_field('cs_security_tips_featured_image');
 		$security_tips_title = get_field('cs_security_tips_title');
 		$security_tips_subtitle = get_field('cs_security_tips_subtitle');
 		$security_tips_description = get_field('cs_security_tips_description');
 		$security_tips_button = get_field('cs_security_tips_read_more_button');
-
+*/
+		
+		$s_tips = new WP_Query(
+			array(
+				'posts_per_page' => 1,
+				'post_type' => 'post',
+				'category_name' => 'security-tips',
+				'suppress_filters' => false
+			)
+		);
+		
 		?>
-		<?php if($security_tips_image || $security_tips_title || $security_tips_subtitle || $security_tips_description || $security_tips_button) : ?>
+		<?php //if($security_tips_image || $security_tips_title || $security_tips_subtitle || $security_tips_description || $security_tips_button) : ?>
+		<?php if($s_tips->have_posts()) : ?>
 		<div class="security-tips wow fadeIn" data-wow-duration="5s">
 			<div class="container">
 				<div class="row">
-					<?php if($security_tips_image) : ?>
+					<?php while($s_tips->have_posts()) : $s_tips->the_post(); ?>
+					<?php if(has_post_thumbnail()) : ?>
 						<div class="col-lg-6">
-							<img src="<?php echo $security_tips_image; ?>">
+							<div class="image-holder" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>)">
+							</div>
 						</div>
 					<?php endif; ?>
-					<div class="<?php echo $security_tips_image ? 'col-lg-6' : 'col-lg-12'; ?>">
+					<div class="<?php echo has_post_thumbnail() ? 'col-lg-6' : 'col-lg-12'; ?>">
 						<div class="security-caption">
 							<h5><?php echo ICL_LANGUAGE_CODE == "mt" ? "Pariri zghar dwar Sigurtá" : "Security Tips" ?></h5>
-
-							<?php if($security_tips_title) : ?>
 							<h2>
-								<?php echo $security_tips_title; ?>
+								<?php the_title(); ?>
 							</h2>
-							<?php endif; ?>
+							<p>
+								<?php echo wp_trim_words(strip_shortcodes(wp_strip_all_tags(preg_replace("~(?:\[/?)[^/\]]+/?\]~s", '', get_the_content()))),20,'...'); ?>
+							</p>
 
-							<?php if($security_tips_subtitle) : ?>
-							<h4>
-								 <?php echo $security_tips_subtitle; ?>
-							</h4>
-							<?php endif; ?>
-
-							<?php if($security_tips_description) : ?>
-								<?php echo apply_filters('the_content',$security_tips_description); ?>
-							<?php endif; ?>
-
-							<?php if($security_tips_button) : ?>
-								<a href="<?php echo $security_tips_button['button_url']; ?>" class="cs-button" <?php echo $security_tips_button['open_in_new_tab'] ? 'target="_blank"' : ''; ?>><?php echo $security_tips_button['button_text']; ?></a>
-							<?php endif; ?>
+							<a href="<?php the_permalink(); ?>" class="cs-button"><?php echo ICL_LANGUAGE_CODE == "mt" ? "Aqrá iżjed" : "Learn More" ?></a>
 						</div>
 					</div>
+					<?php endwhile; wp_reset_query(); ?>
 				</div>
 			</div>
 		</div>
